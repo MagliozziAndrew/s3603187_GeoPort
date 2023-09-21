@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head> <!--Contains Metadata only. Little needs to be changed in this section-->
+<meta charset="utf-8">
+<title>Geoportfolio</title> <!--Changes the name on the tab-->
+    <link rel="stylesheet" href="geoportfoliocss.css"> <!--#ID# #CSS# Put the name of your CSS document and file extension in href e.g. href="geoportfolio.css"-->
+	<link rel="icon" type="image/x-icon" href="GPS.png"> <!--#ID# #FAVICON# This changes the picture shown on the tab. Change the file name under href to your desired image e.g. href="favicon.png"-->
+</head>
+
+<body> <!--Everything in between <body> and </body> affects the display of your Geoportfolio and what is shown-->
+	<!--Start of navigation bar-->
+	<div id="sidebar" class="sidebar-animate-open" style="display:none"> <!--MUST BE AT TOP OF DOCUMENT-->
+		<button onclick="close_sidebar()" class="sidebar-menu-button close-sidebar-button">&times;</button>
+		<a href="#topofpage" class="sidebar-menu-button mainbutton">Home</a>
+		<a href="#about" class="sidebar-menu-button mainbutton">About</a>
+		<a href="#academicinfo" class="sidebar-menu-button mainbutton">Academic Information</a>
+		<a href="#industryexperience" class="sidebar-menu-button mainbutton">Industry Experience</a>
+		<a href="#sap" class="sidebar-menu-button mainbutton">Skills and Proficiencies</a>
+		<a href="#credits" class="sidebar-menu-button mainbutton">Acknowledgements</a>
+		<div class="other-sidebar-info">
+			<table class="sidebar-contact-table"> 
+				<tr>
+					<td>
+						<a href="https://www.linkedin.com/feed/" target="_blank"><img src="linkedin.png" class="sidebar-images"></a> <!-- #ID# #LINKEDIN# Change LinkedIn link to one of your profile page -->
+					</td>
+					<td>
+						<a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a> <!-- #ID# #LINKEDIN# Change LinkedIn link to one of your profile page-->
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--End of navigation bar-->
+
+	<div class="header"> <!--Code for Header that opens the sidebar. DO NOT TOUCH-->
+		<button class="sidebar-menu-button open-sidebar-button" onclick="open_sidebar()">&#9776;</button>
+	</div>
+
+
+    <div class="mapbgdiv" id="topofpage">
+		<img src="mapwelcomemod.jpg" alt="map" class="mapbg">
+		<div class="title">
+			<h1>Geoportfolio</h1>
+			<h2>Andrew Magliozzi</h2> <!-- #ID# #NAME# INSERT YOUR NAME HERE-->
+		</div>
+	</div>
+
+	<!--ABOUT-->
+    <div class="intro bar" id="about"><h2>About</h2></div> <!-- #ID# #INTROHEADING# Change the text of the introduction bar here-->
+	<div class="about"> 
+		This website is the geoportfolio of Andrew Magliozzi which was made for the subject Professional Practice (GEOM2116). The website entails
+		information that is academically and profesionally related to the field of geospatial science
+		<p>
+		A brief introduction about myself is that I am born and raised in Melbourne, Australia and as of June 1997, I am in my final year of the 
+		Bachelor of Science (Geospatial Science) (Honours) course. My geospatial-related interests is working with remote sensing data, specifically creating 
+		and analysing 3D models using point cloud data. My current geospatial project is analysing the change of fuel structure with vegetation age using a Mobile Laser Scanning.
+		</p>
+		<p>
+		My own personal hobbies include sports and playing table top games! More detailed information can be found in the About page!
+		</p>	
+	<img src="Self.jpg" class="self-portrait"> 
+	<!-- #ID# #SELFPORTRAIT# Change the img src name to match the name of your own self-portrait or delete my image and name your image the same name and place it in the same folder -->
+	</div>
+
+    	<!--ACADEMIC PORTFOLIO-->
+	<div class="pagetitle" id="academicinfo">
+        <span class="title-ul">Academic Portfolio Overview</span>
+    </div>
+
+	<div class="bar"><h2>Capstone Project: How does fuel structure change with vegetation age? </h2>
+		<h2>Quantifying the differences using Mobile Laser Scanner?</h2></div> <!-- #ID# #SUBJECT# Change the text to fit a subject you gave done yourself-->
+	<div class="academic-intro">
+		My capstone project is the analysis of fuel structure to identify changes of vegetation age. This research project was completed as a self-actuated course at RMIT, where the project was
+		designed and implemented by myself and academic supervisors (Karin Reinke & Simon Jones). During the completion of the capstone project, major assessments were completed in order to satisfy
+		the final requirements of the honours degree:
+		<ul>
+			<li>Literature Review: Designing a report for the project by outlining the purpose/rationale of the project and describing key literature relevant to the project.</li>
+			<li>Poster Presentation: Conference presentation to collagues and industry professionals of the intial capstone design.</li>
+			<li>Final Implementation: Final semester procedures to collect, examine, and present results.</li>
+		</ul>
+		<p>
+			Below are images and maps of my project:
+		</p>
+		<p>
+			<b>Note:</b> If map display is too small, right-click the image and 'Open in new tab' to allow zooming of the map.
+		</p>
+	</div>	
+    <div class="bar"><h3>Canopy Height Model (CHM)</h3></div>
+	<img src="CMH2011.png" class="ls-image"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+
+	<!--SUBJECT 2-->
+
+	<div class="bar"><h3>Point Cloud Model</h3></div> <!-- #ID# #SUBJECT# Change the text to fit a subject you gave done yourself-->
+	<div class="academic-intro">
+		The image of the 3D point cloud model was created from a script programmed in R language. This involved using the lidR package in which I created: 
+		<ul>
+			<li>Canopy Height Model (CHM above)</li>
+			<li>Vertical Profile of Vegetation</li>
+			<li>Fractional Cover</li>
+		</ul>
+		<p>
+		This project has completed the literature review and the proposal presentation, with results and the written thesis to be completed. 
+		</p>
+		<p>
+			<b>Note:</b> If map display is too small, right-click the image and 'Open in new tab' to allow zooming of the map.
+		</p>
+	</div>	
+<img src="PCModel.jpg" class="agt-survey"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+<div class="bar"><h3>Proposal Presentation</h3></div>
+<img src="Presentation.jpg" class="agt-gis"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+
+<!--INDUSTRY EXPERIENCE-->
+
+<div class="pagetitle" id="industryexperience">
+	<span class="title-ul">Industry Experience</span>
+</div>
+<div class="academic-intro">
+	This page will briefly cover my work experience as a geospatial consultant within the industry. The company that I  worked for 
+	during my studies was Aurecon Group. This page will outline the role and work completed during my tenure at the company.
+</div>
+
+<!--COMPANY 1-->
+
+<div class="bar"><h3>Aurecon Group</h3></div> <!-- #ID# #COMPANY# Change to your company name-->
+<img src="Aurecon.png" class="company-logo">
+<div class="job-title">Geospatial Intern & Student Surveyor</div> <!-- #ID# #COMPANY# Change to your company position-->
+<div class="job-time">Februrary 2022 - Current</div> <!--Change the month and year worked-->
+<div class="job-overview">
+	I began working at Aurecon Group at the beginning of my second year at university, where I worked as a student surveyor to obtain industry experience and skills. 
+	My employment at the company is based within the Melbourne Office, where my engagement included working from home, the office, and on worksites where required.
+	The following tasks were completed during my employment at Aurecon:
+	<ul>
+		<li>Applying surveying skills under the direction of an experienced Surveyor,</li>
+		<li>Assist with field operations including setting up equipment and collecting data,</li>
+		<li>Digitising and extracting data with geospatial programs (such as ArcGIS & MicroStation),</li>
+		<li>Compiling notes to understand and complete tasks efficiently; and</li>
+		<li>To seek knowledge and opportunities to enhance my skills within the role.</li>
+	</ul>
+	<p> My experience at Aurecon as a student Surveyor has been very fulfilling and educational. I have been able to improve my communication skills with co-workers onsite, 
+		and what questions to ask my supervisor and how to ask them. Where university coordinators would provide answers, work experience at Aurecon has taught me how to
+		 identify the answer to my question individually. I always have my work reviewed, but this concept has elevated my growth as a student. As a result, 
+		 I have progressively looked to improving my knowledge at the company by writing down notes in OneNote and keeping documents onsite such as standard codes. 
+		 The ability to connect with individuals within and outside of Aurecon has improved my professionalism and confidence within the industry and in life. 
+		 Where working with students in university is minimal, its mandatory to be able to work in a team to optimise the success of a project. 
+		 Where the scientific principles of university has enabled me to work in the role as a student Surveyor, the work experience over the last year at 
+		 Aurecon has provided the professional insight required to flourish in the geospatial industry.</p>
+</div>
+<!--Skills and Proficiencies table-->
+<div class="bar" style="top:57px" id="sap"><h2>Skills and Proficiencies</h2></div> <!-- #ID# #SKILLS# -->
+<div class="skills">
+	<table class="icontable">
+		<tr>
+			<td><img src="GIS.png" class="iconimages"></td>
+			<td>GIS Applications</td>
+			<td><img src="cloud.png" class="iconimages"></td>
+			<td>Point Cloud Data</td>
+		</tr>
+		<tr>
+			<td><img src="cartography.png" class="iconimages"></td>
+			<td>Cartographic Principles</td>
+			<td><img src="illustrator.png" class="iconimages"></td>
+			<td>Adobe Illustrator</td>
+		</tr>
+		<tr>
+			<td><img src="web.png" class="iconimages"></td>
+			<td>Web Mapping (ArcGIS Online, HTML & CSS)</td>
+			<td><img src="python.png" class="iconimages"></td>
+			<td>Python Programming</td>
+		</tr>
+	</table>
+</div>
+
+<!-- #ID# #CREDITS#-->
+<div class="pagetitle" id="credits">
+	<span class="title-ul">Credits and Attributions</span>
+</div>
+
+<div class="academic-intro">
+   <b> The following programming languages and software were used to create the website</b>
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>Visual Studio Basic</li>
+	</ul>
+   <b>The deliverables contains content from the following subjects:</b>
+	<ul>
+		<li>Capstone Project (Design & Implementation)</li>
+	</ul>
+   <b>Special thanks to the following people who have helped me make this website with their expertise and guidance:</b>
+	<ul>
+		<li>Chayn Sun</li>
+		<li>Nicholas Lee</li>
+		<li><a href="https://www.w3schools.com/">W3Schools</a> and <a href="https://stackoverflow.com/">Stack Overflow</a> (a lot!)</li>
+		<li><a href="https://www.flaticon.com/">Flaticon</a></li>
+	</ul>
+	As per the policy of using the Flaticons with a free account, the attributions and crediting of the creators of the icons are as below:
+	
+<div class="bar"><h2>Attributions of icons used:</h2></div>
+<table id="attribution-table">
+	<tr>
+		<th><a href="https://www.flaticon.com/free-icons/gis" title="database icons">GIS icons created by Surang - Flaticon</a></th>
+		<th><img src="gis.png" class="icon-attribute"></th>
+	</tr>
+	<tr>
+		<th><a href="https://www.flaticon.com/free-icons/cloud" title="draw icons">Cloud icons created by Iconixar - Flaticon</a></th>
+		<th><img src="cloud.png" class="icon-attribute"></th>
+	</tr>
+	<tr>
+		<th><a href="https://www.flaticon.com/free-icons/adobe-illustrator" title="adobe illustrator icons">Adobe illustrator icons created by Freepik - Flaticon</a></th>
+		<th><img src="illustrator.png" class="icon-attribute"></th>
+	</tr>
+	<tr>
+		<th><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></th>
+		<th><img src="python.png" class="icon-attribute"></th>
+	</tr>
+	<tr>
+		<th><a href="https://www.flaticon.com/free-icons/web-map" title="html icons">Web Map icons created by Popcornarts - Flaticon</a></th>
+		<th><img src="web.png" class="icon-attribute"></th>
+	</tr>
+	<tr>
+		<th><a href="https://www.flaticon.com/free-icons/cartography" title="web site icons">Cartography icons created by Juicy_fish - Flaticon</a></th>
+		<th><img src="cartography.png" class="icon-attribute"></th>
+	</tr>
+	<tr>
+		<th><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a></th>
+		<th><img src="linkedin.png" class="icon-attribute"></th>
+	</tr>
+</table>
+</div>
+
+
+
+<div class="footer"> <!-- #ID# #FOOTER# -->
+	<div class="compilationinformation"> <!-- #ID# #COMPINFO# -->
+		<b>Compilation information</b>
+		<br>Website made in Adobe Dreamweaver and Visual Studio Code.
+		<br>HTML and CSS code written by Andrew as part of undergraduate Professional Practice course (GEOM2116).
+	</div>
+	<table class="contacttable">
+		<caption><h2>Contact Information</h2></caption>
+		<tr>
+			<th><img src="mappin.png" alt="pointer" class="contactimages"></th>
+			<th><img src="mail.png" alt="email" class="contactimages"></th>
+			<th><img src="phone.png" alt="phone" class="contactimages"></th>
+		</tr>
+		<tr>
+			<th>
+				Work address:
+				<br>79 Parer Road, Airport West, 3042</th>
+			<th>
+				Email Andrew Magliozzi here:
+				<br><a href = "mailto:magliozzi8@gmail.com">magliozzi8@gmail.com</a>
+			</th>
+			<th>Mobile:
+				<br>0420-611-823
+			</th>
+		</tr>
+	</table>
+</div>
+</body>
+<script> //Code for opening and closing sidebar. DO NOT TOUCH OR EDIT THIS AS THIS IS WHAT WORKS THE SIDEBAR NAVIGATION
+function open_sidebar() {
+  document.getElementById("sidebar").style.display = "block";
+}
+function close_sidebar() {
+  document.getElementById("sidebar").style.display = "none";
+}
+</script>
+</html>
